@@ -4,65 +4,49 @@ import { socialLinks } from "./config";
 export default function Page() {
   return (
     <section>
-      <a href={socialLinks.twitter} target="_blank">
-        <Image
-          src="/profile.png"
-          alt="Profile photo"
-          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
-          unoptimized
-          width={160}
-          height={160}
-          priority
-        />
-      </a>
+  <a href={socialLinks.linkedin} target="_blank">
+    <Image
+      src="/profile.jpg"
+      alt="Profile photo"
+      className="rounded-full block lg:mt-8 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 profile-image"
+      unoptimized
+      width={160}
+      height={160}
+      priority
+    />
+  </a>
 
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Portfolio, made simple!
-      </h1>
+  {/* Typewriter Effect for Heading */}
+  <h1 className="text-2xl font-extrabold tracking-tight typewriter">
+      Hi, I'm Rahul!
+  </h1>
 
-      <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS for optimal performance.
-        </p>
-        <p>
-          Nextfolio includes all the essentials for a stunning portfolio: SEO,
-          MDX support, RSS, Atom, & JSON feeds, analytics, tweet & YouTube
-          embeds, KaTeX integration, and{" "}
-          <a
-            target="_blank"
-            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
-          >
-            more
-          </a>
-          .
-        </p>
-        <p>
-          Nextfolio is{" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
-          </a>{" "}
-          and fully customizable, making it easy to add more features.
-        </p>
-        <p>
-          <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
-          >
-            Deploy
-          </a>{" "}
-          your Nextfolio site with Vercel in minutes and follow the set up
-          instructions in the{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
-        </p>
-        <p>
-          Built and maintained by{" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            Sirius
-          </a>
-          .
-        </p>
-      </div>
-    </section>
+  <div className="prose prose-neutral dark:prose-invert text-justify">
+    <p>
+      I’m a passionate Android developer with 5+ years of industry experience. Currently, I’m working at AngleOne, enhancing the Android experience to build robust financial solutions that help users manage investments with ease.
+    </p>
+    <p>
+      My passion is in crafting intuitive, high-performance Android apps that not only function seamlessly but also deliver exceptional user experiences. I specialize in Android development with Kotlin, Jetpack Compose, and Clean Architecture. Whether working independently on feature development or collaborating with teams, my goal is always to create apps that combine functionality with delight.    </p>
+    <p>
+      When I’m not coding, you’ll find me chasing new adventures in the mountains, strumming my guitar to relax, or diving into deep conversations about life and technology. I also love trekking through rugged trails, seeking new challenges and inspirations along the way.
+    </p>
+    <p>
+      Let’s connect! Feel free to reach out to me on{" "}
+      <a href={socialLinks.linkedin} target="_blank">
+        LinkedIn
+      </a>{" "}
+      or {" "}
+      <a href={socialLinks.instagram} target="_blank">
+      Instagram
+      </a>.
+    </p>
+
+    {/* Aesthetic quote */}
+    <div className="mt-4 text-center text-lg font-semibold italic text-neutral-700 dark:text-neutral-300 pt-4">
+      <p>"Code. Create. Innovate."</p>
+    </div>
+  </div>
+</section>
+
   );
 }

@@ -149,3 +149,37 @@ table {
 .title {
   text-wrap: balance;
 }
+
+.typewriter {
+  display: inline-block; /* Ensures the text only takes up space based on its content */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.0em solid #000; /* Cursor effect */
+  animation: typing 3.0s steps(14) 1s infinite, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%; /* Expands width based on content */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.profile-image {
+  filter: brightness(0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  filter: brightness(1.1); /* Slight brightness boost */
+}
