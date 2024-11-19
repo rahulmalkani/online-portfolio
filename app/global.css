@@ -163,7 +163,7 @@ table {
     width: 0;
   }
   to {
-    width: 30%; /* Expands width based on content */
+    width: 50%; /* Expands width based on content */
   }
 }
 
