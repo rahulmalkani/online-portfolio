@@ -13,9 +13,21 @@ import { metaData, socialLinks } from "app/config";
 
 const YEAR = new Date().getFullYear();
 
-function SocialLink({ href, icon: Icon }) {
+function SocialLink({ href, icon: Icon, hoverColor }) {
+  const hoverClasses = {
+    github: "lg:hover:text-white",
+    linkedin: "lg:hover:text-blue-500",
+    instagram: "lg:hover:text-pink-500",
+    email: "lg:hover:text-red-500",
+  };
+
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`transition-colors lg:brightness-75 lg:hover:brightness-100 duration-300 ${hoverClasses[hoverColor]}`}
+    >
       <Icon />
     </a>
   );
@@ -23,11 +35,11 @@ function SocialLink({ href, icon: Icon }) {
 
 function SocialLinks() {
   return (
-    <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
-      <SocialLink href={socialLinks.github} icon={FaGithub} />
-      <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
-      <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
-      <SocialLink href={socialLinks.email} icon={TbMailFilled} />
+    <div className="flex text-lg gap-3.5 float-right">
+      <SocialLink href={socialLinks.github} icon={FaGithub} hoverColor="github" />
+      <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} hoverColor="linkedin" />
+      <SocialLink href={socialLinks.instagram} icon={FaInstagram} hoverColor="instagram" />
+      <SocialLink href={socialLinks.email} icon={TbMailFilled} hoverColor="email" />
     </div>
   );
 }

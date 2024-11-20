@@ -5,19 +5,36 @@ export default function Page() {
   return (
     <section>
   <a href={socialLinks.linkedin} target="_blank">
-    <Image
-      src="/profile.jpg"
-      alt="Profile photo"
-      className="rounded-full block lg:mt-8 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 profile-image"
-      unoptimized
-      width={160}
-      height={160}
-      priority
-    />
-  </a>
+  <Image
+    src="/profile.jpg"
+    alt="Profile photo"
+    className="
+      rounded-full 
+      block 
+      lg:brightness-100
+      lg:hover:brightness-110 
+      lg:hover:scale-105 
+      brightness-110
+      transition-transform 
+      duration-300
+      mx-auto 
+      sm:float-right 
+      sm:ml-5 
+      sm:mb-5 
+      lg:mt-8 
+      mt-0 
+      lg:mb-5 
+      mb-10
+    "
+    unoptimized
+    width={170}
+    height={170}
+    priority
+  />
+</a>
 
   {/* Typewriter Effect for Heading */}
-  <h1 className="text-2xl font-extrabold tracking-tight typewriter">
+  <h1 className="text-3xl font-extrabold tracking-tight typewriter">
       Hi, I'm Rahul!
   </h1>
 

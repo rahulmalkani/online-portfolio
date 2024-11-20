@@ -163,7 +163,7 @@ table {
     width: 0;
   }
   to {
-    width: 30%; /* Expands width based on content */
+    width: 50%; /* Expands width based on content */
   }
 }
 
@@ -173,13 +173,8 @@ table {
   }
 }
 
-.profile-image {
-  filter: brightness(0.9);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-.profile-image:hover {
-  transform: scale(1.05); /* Slight zoom-in effect */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  filter: brightness(1.1); /* Slight brightness boost */
+.gradient-text {
+  background: linear-gradient(90deg, #24CCFF, #EA8396);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
