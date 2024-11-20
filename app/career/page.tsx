@@ -17,8 +17,8 @@ export default function Career() {
         {jobs.map((job, index) => (
           <div
             key={index}
-            className="p-6 border rounded-lg shadow-sm bg-white dark:bg-neutral-800 transition-transform hover:shadow-lg hover:scale-[1.03] duration-200"
-          >
+            className="p-6 border rounded-lg shadow-sm bg-white dark:bg-neutral-800 transition-transform hover:shadow-lg hover:scale-[1.03] duration-200">
+
             {/* Header */}
             <div className="flex justify-between items-center">
               <span className="text-lg font-semibold text-black dark:text-white">
@@ -30,7 +30,7 @@ export default function Career() {
             </div>
 
             {/* Company */}
-            <div className="mb-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+            <div className="mb-4 text-lg font-semibold text-blue-600 dark:text-blue-400 -mt-0.5">
               <a
                 href={job.url}
                 target="_blank"

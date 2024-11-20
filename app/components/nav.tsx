@@ -13,8 +13,12 @@ export function Navbar() {
     <nav className="lg:mb-16 mb-12 py-5">
       <div className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex items-center md:justify-start justify-center">
-          <Link href="/" className="text-2xl font-semibold tracking-tight gradient-text">
+          <Link
+            href="/"
+            className="text-2xl font-semibold tracking-tight gradient-text border-2 border-transparent hover:border-gradient rounded-lg group relative"
+          >
             {metaData.title}
+            <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-[#1DA1F2] to-[#D85C76] dark:from-[#24CCFF] dark:to-[#EA8396] transition-all duration-500 ease-in-out group-hover:w-full group-hover:left-0"></span>
           </Link>
         </div>
         <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
@@ -47,3 +51,4 @@ export function Navbar() {
     </nav>
   );
 }
+

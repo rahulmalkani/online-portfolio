@@ -174,7 +174,13 @@ table {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #24CCFF, #EA8396);
+  background: linear-gradient(90deg, #1DA1F2, #D85C76); /* Light mode gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .gradient-text {
+  background: linear-gradient(90deg, #24CCFF, #EA8396); /* Dark mode gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

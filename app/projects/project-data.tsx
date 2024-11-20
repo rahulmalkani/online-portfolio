@@ -2,29 +2,25 @@ export interface Project {
   title: string;
   year: number;
   description: string;
-  url: string;
+  url?: string; // URL is now optional
+  techStack: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "Project One",
+    title: "PRAGATI WATER CARE",
     year: 2023,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "An inventory and order management Android app that allows local water jar vendors to completely maintain the records, bills, inventories and orders.",
+    url: "",
+    techStack: "Kotlin, Android Studio, FireBase, MongoDB",
   },
   {
-    title: "Project Two",
+    title: "TRANSFER MANAGEMENT SYSTEM",
     year: 2022,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
-  },
-  {
-    title: "Project Three",
-    year: 2021,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis dolorem rem praesentium dicta labore, at laudantium quisquam.",
-    url: "https://example.com/",
+      "It was part of our participation in Smart India Hackathon. Our Idea got selected for a problem from the CPWD department.",
+    url: "", 
+    techStack: "Java, JavaScript, MySql",
   },
 ];

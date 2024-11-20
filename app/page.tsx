@@ -12,9 +12,9 @@ export default function Page() {
       rounded-full 
       block 
       lg:brightness-100
-      lg:hover:brightness-110 
+      lg:hover:brightness-105 
       lg:hover:scale-105 
-      brightness-110
+      brightness-105
       transition-transform 
       duration-300
       mx-auto 
