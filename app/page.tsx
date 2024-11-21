@@ -48,6 +48,9 @@ export default function Page() {
       When I’m not coding, you’ll find me chasing new adventures in the mountains, strumming my guitar to relax, or diving into deep conversations about life and technology. I also love trekking through rugged trails, seeking new challenges and inspirations along the way.
     </p>
     <p>
+    While Android development is where I’ve truly found my passion, my coding journey kicked off with JavaScript, HTML, and CSS during my college days. It’s a world I still enjoy revisiting—just like I did to bring this portfolio to life.
+    </p>
+    <p>
       Let’s connect! Feel free to reach out to me on{" "}
       <a href={socialLinks.linkedin} target="_blank">
         LinkedIn

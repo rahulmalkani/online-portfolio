@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
+import { SocialLink } from "./social-link";
+import { socialLinks } from "../config";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { TbMailFilled } from "react-icons/tb";
 
 const navItems = {
   "/career": { name: "Career" },
@@ -21,7 +25,7 @@ export function Navbar() {
             <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-[#1DA1F2] to-[#D85C76] dark:from-[#24CCFF] dark:to-[#EA8396] transition-all duration-500 ease-in-out group-hover:w-full group-hover:left-0"></span>
           </Link>
         </div>
-        <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
+        <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center justify-center">
           {Object.entries(navItems).map(([path, { name }]) =>
             path.startsWith("http") ? (
               <a
@@ -46,9 +50,12 @@ export function Navbar() {
             )
           )}
           <ThemeSwitch />
+          {/* Vertical Divider */}
+          <div className="h-4 border-l border-neutral-400 dark:border-neutral-600 mx-1"></div>
+          <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} hoverColor="linkedin" />
+          <SocialLink href={socialLinks.email} icon={TbMailFilled} hoverColor="email" />
         </div>
       </div>
     </nav>
   );
 }
-

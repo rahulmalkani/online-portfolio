@@ -9,7 +9,7 @@ export interface Job {
 export const jobs: Job[] = [
   {
     position: "SDE-II (Android)",
-    company: "AngleOne",
+    company: "Angle One",
     duration: "Nov '24 – Present",
     description:
       "Currently building and enhancing the Android AngleOne App, providing seamless and secure mobile finance solutions for users.",

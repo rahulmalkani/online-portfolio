@@ -9,44 +9,52 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
-      <div className="space-y-6">
+    <section className="max-w-4xl mx-auto">
+      <h1 className="mb-12 text-2xl sm:text-3xl font-extrabold tracking-tight text-center">
+        From Ideas to Execution &nbsp;💡
+      </h1>
+      <div className="space-y-8">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="block group transition-opacity duration-200"
+            className="py-8 px-6 border rounded-lg bg-gradient-to-r from-white to-gray-100 dark:from-neutral-800 dark:to-neutral-900 shadow-sm hover:shadow-lg hover:scale-[1.03] transition-transform duration-300"
           >
-            <div className="flex flex-col">
-              <div className="w-full flex justify-between items-baseline">
-                <span className="text-black dark:text-white font-medium tracking-tight">
-                  {project.title}
-                </span>
-                <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
-                  {project.year}
-                </span>
+            {/* Header */}
+            <div className="flex justify-between items-center">
+              <div className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                {project.title}
               </div>
-              <p className="prose prose-neutral dark:prose-invert pt-3">
-                {project.description}
-              </p>
-              {/* Show Tech Stack */}
-              <div className="mt-3 text-sm text-neutral-500 dark:text-neutral-300">
-                <strong>Tech Stack:</strong> {project.techStack}
+              <div className="text-sm text-neutral-600 dark:text-neutral-400">
+                {project.year}
               </div>
-              {/* Conditionally render URL if present */}
-              {project.url && (
-                <div className="mt-3 text-sm">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline"
-                  >
-                    Visit Project
-                  </a>
-                </div>
-              )}
             </div>
+
+            {/* Description */}
+            <p className="mt-4 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+              {project.description}
+            </p>
+
+            {/* Tech Stack */}
+            <div className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">
+              <strong className="font-medium text-gray-800 dark:text-gray-200">
+                Tech Stack:
+              </strong>{" "}
+              {project.techStack}
+            </div>
+
+            {/* URL */}
+            {project.url && (
+              <div className="mt-4">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  Visit Project →
+                </a>
+              </div>
+            )}
           </div>
         ))}
       </div>
