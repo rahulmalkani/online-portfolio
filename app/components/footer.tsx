@@ -13,7 +13,7 @@ import { SocialLink } from "./social-link";
 const YEAR = new Date().getFullYear();
 
 function SocialLinks() {
-  return (
+return (
     <div className="flex text-lg gap-3.5 float-right">
       <SocialLink href={socialLinks.github} icon={FaGithub} hoverColor="github" />
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} hoverColor="linkedin" />
