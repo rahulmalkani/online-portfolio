@@ -2,8 +2,8 @@ import Link from "next/link";
 import { formatDate, getBlogPosts } from "app/lib/posts";
 
 export const metadata = {
-  title: "Blog",
-  description: "Nextfolio Blog",
+  title: "My Blog",
+  description: "MY Blog Desciption",
 };
 
 export default function BlogPosts() {
