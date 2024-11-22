@@ -7,14 +7,14 @@ export interface Job {
 }
 
 export const jobs: Job[] = [
-  {
-    position: "SDE-II (Android)",
-    company: "Angle One",
-    duration: "Nov '24 – Present",
-    description:
-      "Currently building and enhancing the Android AngleOne App, providing seamless and secure mobile finance solutions for users.",
-    url: "https://play.google.com/store/apps/details?id=com.msf.angelmobile&hl=en_IN&pli=1",
-  },
+  // {
+  //   position: "SDE-II (Android)",
+  //   company: "Angle One",
+  //   duration: "Nov '24 – Present",
+  //   description:
+  //     "Currently building and enhancing the Android AngleOne App, providing seamless and secure mobile finance solutions for users.",
+  //   url: "https://play.google.com/store/apps/details?id=com.msf.angelmobile&hl=en_IN&pli=1",
+  // },
   {
     position: "SSE - Android",
     company: "Paytm",
