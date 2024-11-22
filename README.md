@@ -1,6 +1,6 @@
 # 🌟 My Digital Portfolio  
 
-Welcome to the GitHub repository for my Online Portfolio! This portfolio showcases my work, projects, and achievements as a [Your Profession, e.g., Web Developer, Graphic Designer, etc.].  
+Welcome to the GitHub repository for my Online Portfolio! This portfolio showcases my work, projects, and achievements as an Android Engineer.  
 
 ## 🌈 Live Preview  
 Check it out live: [https://rahulmalkani.dev](https://rahulmalkani.dev)  
@@ -29,8 +29,8 @@ Feel free to reuse or modify this project for your own portfolio! See the [Licen
 
 ## 📧 Contact  
 Feel free to reach out if you have any questions, feedback, or collaboration ideas!  
-- **Email**: [youremail@example.com](mailto:rahulmalkani.work@gmail.com)  
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/rahul-malkani)  
+- **Email**: [rahulmalkani.work@gmail.com](mailto:rahulmalkani.work@gmail.com)  
+- **LinkedIn**: [Connect with me on LinkedIn](https://linkedin.com/in/rahul-malkani)  
 
 ## 🔒 License  
 This project is open source and available under the [MIT License](LICENSE). You are free to use, modify, and distribute it for personal or commercial use. Attribution is appreciated but not required.  
