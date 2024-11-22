@@ -40,7 +40,7 @@ export default function Page() {
 
   <div className="prose prose-neutral dark:prose-invert text-justify">
     <p>
-      I’m a passionate Android developer with 5+ years of industry experience. Currently, I’m working at AngleOne, enhancing the Android experience to build robust financial solutions that help users manage investments with ease.
+      I’m a passionate Android developer with 5+ years of industry experience. Currently, I’m working at Paytm, enhancing the Android experience to build robust financial solutions that help users manage investments with ease.
     </p>
     <p>
       My passion is in crafting intuitive, high-performance Android apps that not only function seamlessly but also deliver exceptional user experiences. I specialize in Android development with Kotlin, Jetpack Compose, and Clean Architecture. Whether working independently on feature development or collaborating with teams, my goal is always to create apps that combine functionality with delight.    </p>
