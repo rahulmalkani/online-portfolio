@@ -1,9 +1,9 @@
 export const metaData = {
-  baseUrl: "https://rahulmalkani.dev/",
-  title: "Rahul Malkani",
+  baseUrl: "https://rahulmalkani.dev",
+  title: "Rahul Malkani | Expert Android Developer | Kotlin & Java Specialist",
   name: "Rahul Malkani",
   ogImage: "/banner.jpg",
-  description: "I'm an accomplished Android Application Developer with over 5 years of hands-on experience. I'm skilled in Java & Kotlin programming languages and have a solid grasp of latest Android development concepts including Compose, Flow, Coroutines, Room, Hilt, MVVM, Android SDK, App Architecture, and related technologies. ",
+  description: "Experienced Android Developer with 5+ years of expertise in Kotlin, Java, Jetpack Compose, and modern app architectures like MVVM. Skilled in building scalable mobile apps using Android SDK, Hilt, Coroutines, and Room.",
   metaTags: {
     keywords:"Android Developer, Kotlin, Java, Jetpack Compose, Firebase, MVVM, Android SDK, Mobile App Development",
     author: "Rahul Malkani",

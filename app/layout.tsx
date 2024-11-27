@@ -37,8 +37,9 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: metaData.name,
     card: "summary_large_image",
+    title: "Rahul Malkani | Android Developer",
+    description: "5+ years of expertise in Android development, Kotlin, Java, MVVM, Jetpack Compose, and modern app architectures."
   },
   icons: {
     icon: "/favicon.ico",
