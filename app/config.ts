@@ -1,5 +1,5 @@
 export const metaData = {
-  baseUrl: "https://rahulmalkani.dev",
+  baseUrl: "https://www.rahulmalkani.dev",
   title: "Rahul Malkani | Expert Android Developer | Kotlin & Java Specialist",
   name: "Rahul Malkani",
   ogImage: "/banner.jpg",

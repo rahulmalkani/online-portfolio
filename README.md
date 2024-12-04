@@ -3,7 +3,7 @@
 Welcome to the GitHub repository for my Online Portfolio! This portfolio showcases my work, projects, and achievements as an Android Engineer.  
 
 ## 🌈 Live Preview  
-Check it out live: [https://rahulmalkani.dev](https://rahulmalkani.dev)  
+Check it out live: [https://www.rahulmalkani.dev](https://www.rahulmalkani.dev)  
 
 ## 🚀 About  
 This portfolio is built upon the amazing [Nextfolio](https://github.com/1msirius/Nextfolio) template, which I have modified and customized to better represent my personal style, skills, and projects.  
