@@ -5,6 +5,10 @@ export default function robots() {
     rules: [
       {
         userAgent: "*",
+        disallow: [
+          "/blog/getting-started",        // Disallow crawling of pages
+          "/blog/custom-mdx-examples",    
+        ],
       },
     ],
     sitemap: `${metaData.baseUrl}/sitemap.xml`,
