@@ -1,0 +1,340 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background-color: rgba(59, 130, 246, 0.3);
+  color: inherit;
+}
+
+/* Light theme colors */
+:root {
+  --sh-class: #2d5e9d;
+  --sh-identifier: #354150;
+  --sh-sign: #8996a3;
+  --sh-string: #007f7a;
+  --sh-keyword: #e02518;
+  --sh-comment: #a19595;
+  --sh-jsxliterals: #6266d1;
+  --sh-property: #e25a1c;
+  --sh-entity: #e25a1c;
+  --accent-green: #059669; /* Softer green for light theme (emerald-600) */
+}
+
+/* Dark theme colors */
+.dark {
+  background-color: #0d1117;
+  --accent-green: #3DDC84; /* Bright Android green for dark theme */
+  --sh-class: #79c0ff;
+  --sh-identifier: #c9d1d9;
+  --sh-sign: #8b949e;
+  --sh-string: #a5d6ff;
+  --sh-keyword: #ff7b72;
+  --sh-comment: #8b949e;
+  --sh-jsxliterals: #d2a8ff;
+  --sh-property: #ffa657;
+  --sh-entity: #ffa657;
+}
+
+html {
+  min-width: 360px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #24292f;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.dark body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/* Typography improvements */
+.prose {
+  @apply text-[#24292f] dark:text-[#c9d1d9];
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.prose .anchor {
+  @apply absolute invisible no-underline;
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 80%;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply visible;
+}
+
+.prose a {
+  @apply transition-all decoration-neutral-300 dark:decoration-neutral-700 underline-offset-4 decoration-[0.08em] font-normal text-[#0969da] dark:text-[#58a6ff] hover:decoration-[#0969da] dark:hover:decoration-[#58a6ff];
+}
+
+.prose a:hover {
+  @apply decoration-[#0969da] dark:decoration-[#58a6ff];
+}
+
+.prose .anchor:after {
+  @apply text-neutral-300 dark:text-neutral-700;
+  content: "#";
+}
+
+.prose *:hover > .anchor {
+  @apply visible;
+}
+
+.prose pre {
+  @apply bg-[#f6f8fa] dark:bg-[#161b22] rounded-md overflow-x-auto border border-[#d0d7de] dark:border-[#30363d];
+}
+
+.prose code {
+  @apply px-1.5 py-0.5 rounded text-sm bg-[#f6f8fa] dark:bg-[#161b22] text-[#24292f] dark:text-[#c9d1d9] border border-[#d0d7de] dark:border-[#30363d] font-mono;
+}
+
+.prose pre code {
+  @apply p-0 bg-transparent border-0;
+  line-height: 1.5;
+}
+
+.prose code span {
+  @apply font-normal;
+}
+
+.prose img {
+  @apply m-0 rounded-md;
+}
+
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply font-semibold tracking-tight text-[#24292f] dark:text-[#c9d1d9] !important;
+}
+
+.prose strong {
+  @apply font-semibold;
+}
+
+.prose > :first-child {
+  margin-top: 1.25em !important;
+  margin-bottom: 1.25em !important;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.prose .tweet a {
+  text-decoration: inherit;
+  font-weight: 500;
+}
+
+table {
+  display: block;
+  max-width: fit-content;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.prose .callout > p {
+  margin: 0 !important;
+}
+
+.title {
+  text-wrap: balance;
+}
+
+/* Developer-style gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0969da 0%, #8250df 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .gradient-text {
+  background: linear-gradient(135deg, #58a6ff 0%, #a5a5ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Minimalist card hover effects */
+.card-hover {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  border-color: #d0d7de;
+}
+
+.dark .card-hover:hover {
+  border-color: #30363d;
+  background-color: #161b22;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+/* Subtle link underline animation */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: currentColor;
+  transition: width 0.2s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Code-inspired badge */
+.code-badge {
+  @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-medium;
+  @apply bg-[#f6f8fa] dark:bg-[#161b22] text-[#24292f] dark:text-[#c9d1d9];
+  @apply border border-[#d0d7de] dark:border-[#30363d];
+}
+
+/* Subtle glow effect */
+.glow {
+  position: relative;
+}
+
+.glow::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(9, 105, 218, 0.1), rgba(130, 80, 223, 0.1));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.glow:hover::before {
+  opacity: 1;
+}
+
+/* Minimalist divider */
+.divider {
+  @apply border-t border-[#d0d7de] dark:border-[#30363d];
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #0969da;
+  outline-offset: 2px;
+}
+
+.dark *:focus-visible {
+  outline-color: #58a6ff;
+}
+
+/* Android Material Design elements */
+.material-card {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.material-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+.dark .material-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.dark .material-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.material-chip {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+
+.material-chip:hover {
+  transform: scale(1.05);
+}
+
+/* Material Design elevation levels */
+.elevation-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.elevation-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.elevation-4 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* Android ripple effect simulation */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(61, 220, 132, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.ripple:active::after {
+  width: 300px;
+  height: 300px;
+}
