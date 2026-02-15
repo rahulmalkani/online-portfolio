@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 interface ImageGridProps {
-  images: {
+  images?: {
     src: string;
     alt: string;
     href?: string;
@@ -11,7 +11,7 @@ interface ImageGridProps {
 }
 
 export const ImageGrid: React.FC<ImageGridProps> = ({
-  images,
+  images = [],
   columns = 3,
 }) => {
   const gridClass = {

@@ -13,6 +13,9 @@ import "katex/dist/katex.min.css";
 
 function CustomLink(props) {
   let href = props.href;
+  if (typeof href !== "string") {
+    return <a {...props} />;
+  }
   if (href.startsWith("/")) {
     return (
       <Link href={href} {...props}>
@@ -36,12 +39,15 @@ function Code({ children, ...props }) {
 }
 
 function Table({ data }) {
-  let headers = data.headers.map((header, index) => (
+  const headersData = Array.isArray(data?.headers) ? data.headers : [];
+  const rowsData = Array.isArray(data?.rows) ? data.rows : [];
+
+  let headers = headersData.map((header, index) => (
     <th key={index}>{header}</th>
   ));
-  let rows = data.rows.map((row, index) => (
+  let rows = rowsData.map((row, index) => (
     <tr key={index}>
-      {row.map((cell, cellIndex) => (
+      {(Array.isArray(row) ? row : []).map((cell, cellIndex) => (
         <td key={cellIndex}>{cell}</td>
       ))}
     </tr>
