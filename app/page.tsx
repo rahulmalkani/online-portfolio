@@ -22,7 +22,6 @@ export default function Page() {
                   alt="Profile photo"
                   fill
                   className="rounded-full object-cover object-center"
-                  unoptimized
                   sizes="7rem"
                   priority
                 />
