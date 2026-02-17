@@ -31,14 +31,11 @@ export default function Page() {
 
           {/* Header Content */}
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-1 text-[#24292f] dark:text-[#c9d1d9]">
-              Hi, I'm Rahul
+            <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-[#24292f] dark:text-[#c9d1d9]">
+              Hi, I'm Rahul.
             </h1>
-            <p className="text-lg text-[#57606a] dark:text-[#8b949e] font-medium mb-1">
-              Android Engineer
-            </p>
-            <p className="text-sm text-[#8b949e] dark:text-[#6e7681] leading-relaxed max-w-2xl">
-              Building reliable fintech applications in payments and trading with a focus on correctness, performance, and clean architecture.
+            <p className="mt-1.5 text-base md:text-lg text-[#57606a] dark:text-[#8b949e] leading-snug">
+              Android engineer building reliable mobile systems at scale.
             </p>
           </div>
         </div>
@@ -53,10 +50,13 @@ export default function Page() {
           </h2>
           <div className="space-y-4 text-[#24292f] dark:text-[#c9d1d9] leading-relaxed">
             <p className="text-base">
-              I'm an Android engineer with <strong className="font-semibold">6+ years</strong> of experience building reliable fintech applications in payments and trading, with a strong focus on correctness, performance, and clean architecture. Currently, I'm working at <strong className="font-semibold">AngelOne</strong> as SDE II, where I own the development and stability of core trade execution and order placement flows within the trade pod.
+              I'm an Android engineer with over <strong className="font-semibold">6+ years</strong> of experience building large-scale mobile applications, mainly in payments and trading systems where reliability and correctness matter.
             </p>
             <p className="text-base">
-              Previously at <strong className="font-semibold">Paytm</strong>, I worked on the Scan & Pay module—a core payment flow in the consumer app. I led its migration to Clean Architecture and implemented critical payment features including the T-PAP (Third-Party Application Provider) model for UPI, Instrument Caching, and Visa Single Click Payments. I've optimized performance metrics, increased test coverage significantly, and built scalable solutions that improve both user experience and business outcomes.
+              My work focuses on designing and maintaining systems that perform well under real production load. I care deeply about architecture, long-term maintainability, and writing code that is easy to reason about and safe to evolve. Much of my experience comes from owning critical user flows, improving performance bottlenecks, and strengthening system stability as products scale.
+            </p>
+            <p className="text-base">
+              I enjoy working close to production problems and understanding why systems fail, not just how to ship features. This has shaped how I approach Android development and how I make technical trade-offs over time.
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function Page() {
         {/* Personal Note */}
         <div className="border-l-2 border-[var(--accent-green)] pl-5 py-2 bg-[#f6f8fa] dark:bg-[#161b22] rounded-r-md">
           <p className="text-[#24292f] dark:text-[#c9d1d9] leading-relaxed text-base italic">
-            When I'm not coding, you'll find me chasing new adventures in the mountains, strumming my guitar to relax, or diving into deep conversations about life and technology. I also love trekking through rugged trails, seeking new challenges and inspirations along the way.
+            Outside of work, I like to slow things down. I enjoy spending time in the mountains, playing the guitar, and having long conversations about life and technology. It helps me stay grounded and clear-headed.
           </p>
         </div>
 
@@ -76,78 +76,55 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
               href="/career"
-              className="group flex items-center justify-between p-4 border border-[#d0d7de] dark:border-[#30363d] rounded-xl hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card"
+              className="group flex items-center justify-between py-2.5 px-3 border border-[#d0d7de] dark:border-[#30363d] rounded-lg hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card"
             >
               <div>
-                <div className="font-medium text-[#24292f] dark:text-[#c9d1d9] mb-1 group-hover:text-[var(--accent-green)] transition-colors">
+                <div className="font-medium text-[#24292f] dark:text-[#c9d1d9] text-sm mb-0.5 group-hover:text-[var(--accent-green)] transition-colors">
                   Career
                 </div>
-                <div className="text-sm text-[#57606a] dark:text-[#8b949e]">
+                <div className="text-xs text-[#57606a] dark:text-[#8b949e]">
                   Professional journey
                 </div>
               </div>
-              <svg className="w-5 h-5 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
             <Link
               href="/projects"
-              className="group flex items-center justify-between p-4 border border-[#d0d7de] dark:border-[#30363d] rounded-xl hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card"
+              className="group flex items-center justify-between py-2.5 px-3 border border-[#d0d7de] dark:border-[#30363d] rounded-lg hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card"
             >
               <div>
-                <div className="font-medium text-[#24292f] dark:text-[#c9d1d9] mb-1 group-hover:text-[var(--accent-green)] transition-colors">
+                <div className="font-medium text-[#24292f] dark:text-[#c9d1d9] text-sm mb-0.5 group-hover:text-[var(--accent-green)] transition-colors">
                   Projects
                 </div>
-                <div className="text-sm text-[#57606a] dark:text-[#8b949e]">
+                <div className="text-xs text-[#57606a] dark:text-[#8b949e]">
                   Selected work
                 </div>
               </div>
-              <svg className="w-5 h-5 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
             <Link
               href="/skills"
-              className="group flex items-center justify-between p-4 border border-[#d0d7de] dark:border-[#30363d] rounded-xl hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card"
+              className="group flex items-center justify-between py-2.5 px-3 border border-[#d0d7de] dark:border-[#30363d] rounded-lg hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card"
             >
               <div>
-                <div className="font-medium text-[#24292f] dark:text-[#c9d1d9] mb-1 group-hover:text-[var(--accent-green)] transition-colors">
+                <div className="font-medium text-[#24292f] dark:text-[#c9d1d9] text-sm mb-0.5 group-hover:text-[var(--accent-green)] transition-colors">
                   Skills
                 </div>
-                <div className="text-sm text-[#57606a] dark:text-[#8b949e]">
+                <div className="text-xs text-[#57606a] dark:text-[#8b949e]">
                   Technical expertise
                 </div>
               </div>
-              <svg className="w-5 h-5 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
           </div>
         </div>
 
-        {/* Connect Section */}
-        <div className="pt-4 border-t border-[#d0d7de] dark:border-[#30363d]">
-          <p className="text-[#24292f] dark:text-[#c9d1d9] leading-relaxed text-base mb-0">
-            Let's connect! Feel free to reach out to me on{" "}
-            <a
-              href={socialLinks.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-underline font-medium text-[#0969da] dark:text-[#58a6ff]"
-            >
-              LinkedIn
-            </a>{" "}
-            or{" "}
-            <a
-              href={socialLinks.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-underline font-medium text-[#0969da] dark:text-[#58a6ff]"
-            >
-              Instagram
-            </a>.
-          </p>
-        </div>
       </div>
     </section>
   );
