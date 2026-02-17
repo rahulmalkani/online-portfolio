@@ -28,7 +28,7 @@ export default function Career() {
             <div key={index} className="relative pl-0 md:pl-12">
               {/* Timeline dot */}
               <div className="absolute left-0 top-1.5 w-8 h-8 hidden md:flex items-center justify-center">
-                <div className="w-3 h-3 rounded-full bg-[var(--accent-green)] ring-4 ring-[#ffffff] dark:ring-[#0d1117]"></div>
+                <div className="w-3 h-3 rounded-full bg-[var(--accent-green)] ring-4 ring-[#f6f8fa] dark:ring-[#0d1117]"></div>
               </div>
 
               <div className="border-l-2 md:border-l-0 border-[#d0d7de] dark:border-[#30363d] pl-6 md:pl-0">

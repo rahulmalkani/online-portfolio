@@ -29,16 +29,20 @@ function NavLinks({ pathname, onItemClick }: { pathname: string; onItemClick?: (
             target="_blank"
             rel="noopener noreferrer"
             onClick={onItemClick}
-            className="text-sm md:text-base font-medium text-[#57606a] dark:text-[#8b949e] hover:text-[#24292f] dark:hover:text-[#c9d1d9] transition-colors duration-150 link-underline"
+            className="inline-flex items-center gap-1.5 text-sm md:text-base font-medium text-[#57606a] dark:text-[#8b949e] hover:text-[#24292f] dark:hover:text-[#c9d1d9] transition-colors duration-150 link-underline rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-green)] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#0d1117]"
+            aria-label={`${name} (opens in new tab)`}
           >
             {name}
+            <svg className="w-3.5 h-3.5 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
           </a>
         ) : (
           <Link
             key={path}
             href={path}
             onClick={onItemClick}
-            className={`text-sm md:text-base font-medium transition-colors duration-150 link-underline ${
+            className={`text-sm md:text-base font-medium transition-colors duration-150 link-underline rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-green)] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#0d1117] ${
               pathname === path
                 ? "text-[var(--accent-green)]"
                 : "text-[#57606a] dark:text-[#8b949e] hover:text-[#24292f] dark:hover:text-[#c9d1d9]"

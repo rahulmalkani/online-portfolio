@@ -23,7 +23,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <article
             key={index}
-            className="group material-card border border-[#d0d7de] dark:border-[#30363d] rounded-xl p-6 bg-[#ffffff] dark:bg-[#0d1117] hover:border-[var(--accent-green)] transition-all duration-200"
+            className="group material-card border border-[#d0d7de] dark:border-[#30363d] rounded-xl p-6 bg-[#ffffff] dark:bg-[#0d1117] hover:border-[var(--accent-green)] hover:-translate-y-0.5 transition-all duration-200 motion-reduce:translate-y-0"
           >
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
               <div className="flex-1">

@@ -16,12 +16,12 @@ export default function Page() {
               rel="noopener noreferrer"
               className="block group"
             >
-              <div className="relative w-28 h-28 rounded-full overflow-hidden bg-[#f0f2f5] dark:bg-[#161b22] ring-2 ring-[#e5e7eb] dark:ring-[#30363d] shadow-md transition-[box-shadow] duration-200 group-hover:ring-[var(--accent-green)]">
+              <div className="relative w-28 h-28 rounded-full overflow-hidden bg-[#f0f2f5] dark:bg-[#161b22] ring-2 ring-[#e5e7eb] dark:ring-[#30363d] shadow-md transition-all duration-200 group-hover:ring-[var(--accent-green)] group-hover:shadow-lg">
                 <Image
                   src="/profile.png"
                   alt="Profile photo"
                   fill
-                  className="rounded-full object-cover object-center"
+                  className="rounded-full object-cover object-center transition-transform duration-200 group-hover:scale-105 motion-reduce:scale-100 motion-reduce:transition-none"
                   sizes="7rem"
                   priority
                 />
@@ -76,7 +76,7 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Link
               href="/career"
-              className="group flex items-center justify-between py-2.5 px-3 border border-[#d0d7de] dark:border-[#30363d] rounded-lg hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card"
+              className="group flex items-center justify-between py-2.5 px-3 border border-[#d0d7de] dark:border-[#30363d] rounded-lg hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-green)] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#0d1117]"
             >
               <div>
                 <div className="font-medium text-[#24292f] dark:text-[#c9d1d9] text-sm mb-0.5 group-hover:text-[var(--accent-green)] transition-colors">
@@ -86,13 +86,13 @@ export default function Page() {
                   Professional journey
                 </div>
               </div>
-              <svg className="w-4 h-4 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] group-hover:translate-x-0.5 transition-all duration-200 motion-reduce:translate-x-0 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
             <Link
               href="/projects"
-              className="group flex items-center justify-between py-2.5 px-3 border border-[#d0d7de] dark:border-[#30363d] rounded-lg hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card"
+              className="group flex items-center justify-between py-2.5 px-3 border border-[#d0d7de] dark:border-[#30363d] rounded-lg hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-green)] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#0d1117]"
             >
               <div>
                 <div className="font-medium text-[#24292f] dark:text-[#c9d1d9] text-sm mb-0.5 group-hover:text-[var(--accent-green)] transition-colors">
@@ -102,13 +102,13 @@ export default function Page() {
                   Selected work
                 </div>
               </div>
-              <svg className="w-4 h-4 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] group-hover:translate-x-0.5 transition-all duration-200 motion-reduce:translate-x-0 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
             <Link
               href="/skills"
-              className="group flex items-center justify-between py-2.5 px-3 border border-[#d0d7de] dark:border-[#30363d] rounded-lg hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card"
+              className="group flex items-center justify-between py-2.5 px-3 border border-[#d0d7de] dark:border-[#30363d] rounded-lg hover:border-[var(--accent-green)] hover:bg-[#f6f8fa] dark:hover:bg-[#161b22] hover:shadow-md transition-all duration-200 material-card focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-green)] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#0d1117]"
             >
               <div>
                 <div className="font-medium text-[#24292f] dark:text-[#c9d1d9] text-sm mb-0.5 group-hover:text-[var(--accent-green)] transition-colors">
@@ -118,7 +118,7 @@ export default function Page() {
                   Technical expertise
                 </div>
               </div>
-              <svg className="w-4 h-4 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-[#57606a] dark:text-[#8b949e] group-hover:text-[var(--accent-green)] group-hover:translate-x-0.5 transition-all duration-200 motion-reduce:translate-x-0 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
