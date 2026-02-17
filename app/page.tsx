@@ -62,10 +62,10 @@ export default function Page() {
           </div>
           <div className="flex-1 text-center md:text-left px-8 py-3 md:px-0 md:py-0">
             <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-[#24292f] dark:text-[#c9d1d9]">
-              Hi, I'm Rahul.
+              Hi, I'm Rahul Malkani.
             </h1>
-            <p className="mt-2 text-[15px] md:text-base text-[#57606a] dark:text-[#8b949e] leading-relaxed max-w-md md:max-w-none">
-              Android engineer building reliable mobile systems at scale.
+            <p className="mt-1.5 text-sm text-[#8b949e] dark:text-[#6e7681]">
+              Mobile Application Developer · India
             </p>
           </div>
         </div>

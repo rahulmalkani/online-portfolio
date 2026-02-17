@@ -196,7 +196,6 @@ table {
   background-color: #161b22;
 }
 
-/* Smooth fade-in animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
