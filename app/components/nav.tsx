@@ -59,26 +59,21 @@ export function Navbar() {
   return (
     <nav className="lg:mb-10 mb-8 py-5 border-b border-[#d0d7de] dark:border-[#30363d]">
       <div className="flex flex-row items-center justify-between">
-        <Link
-          href="/"
-          className="text-xl md:text-2xl font-semibold tracking-tight text-[#24292f] dark:text-[#c9d1d9] hover:text-[var(--accent-green)] transition-colors duration-150"
-        >
-          RM
-        </Link>
-
-        {/* Desktop: horizontal nav */}
+        {/* Desktop: nav links on left */}
         <div className="hidden md:flex flex-row gap-6 lg:gap-8 items-center">
           <NavLinks pathname={pathname} />
-          <div className="h-4 border-l border-[#d0d7de] dark:border-[#30363d] mx-2" />
-          <div className="flex gap-3">
-            <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} hoverColor="linkedin" />
-            <SocialLink href={socialLinks.email} icon={TbMailFilled} hoverColor="email" />
-          </div>
+        </div>
+
+        {/* Desktop: social + theme on right */}
+        <div className="hidden md:flex flex-row gap-3 items-center ml-auto">
+          <div className="h-4 border-l border-[#d0d7de] dark:border-[#30363d] mr-2" />
+          <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} hoverColor="linkedin" />
+          <SocialLink href={socialLinks.email} icon={TbMailFilled} hoverColor="email" />
           <ThemeSwitch />
         </div>
 
-        {/* Mobile: social + theme + hamburger (siblings) */}
-        <div className="flex md:hidden flex-row items-center gap-2">
+        {/* Mobile: social + theme + hamburger on right (nav links in drawer) */}
+        <div className="flex md:hidden flex-row items-center justify-end gap-2 w-full">
           <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} hoverColor="linkedin" />
           <SocialLink href={socialLinks.email} icon={TbMailFilled} hoverColor="email" />
           <ThemeSwitch />

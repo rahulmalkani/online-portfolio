@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: "6+ years of experience building reliable fintech applications in payments and trading, with a strong focus on correctness, performance, and clean architecture."
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.svg",
   },
 };
 
