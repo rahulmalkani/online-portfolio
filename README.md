@@ -10,7 +10,7 @@ Live at: https://www.rahulmalkani.in
 ## Running locally
 
 ```bash
-git clone <repo-url>
+git clone [repo-url](https://github.com/rahulmalkani/web-portfolio-src)
 cd rahulmalkani.in
 npm install
 npm run dev
