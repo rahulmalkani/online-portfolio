@@ -25,6 +25,8 @@
 .vscode
 .idea
 *.log
+.cache
+.eslintcache
 
 # debug
 npm-debug.log*

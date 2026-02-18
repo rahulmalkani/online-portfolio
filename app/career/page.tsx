@@ -20,13 +20,13 @@ export default function Career() {
       </div>
 
       <div className="relative">
-        {/* Timeline line (desktop only) */}
+        {/* Timeline line */}
         <div className="absolute left-4 top-0 bottom-0 w-px bg-[#d0d7de] dark:bg-[#30363d] hidden md:block"></div>
 
         <div className="space-y-12">
           {jobs.map((job, index) => (
             <div key={index} className="relative pl-0 md:pl-12">
-              {/* Timeline dot (desktop only) */}
+              {/* Timeline dot */}
               <div className="absolute left-0 top-1.5 w-8 h-8 hidden md:flex items-center justify-center">
                 <div className="w-3 h-3 rounded-full bg-[var(--accent-green)] ring-4 ring-[#f6f8fa] dark:ring-[#0d1117]"></div>
               </div>

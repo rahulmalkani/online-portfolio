@@ -1,11 +1,11 @@
 export const metaData = {
-  baseUrl: "https://www.rahulmalkani.dev",
-  title: "Rahul Malkani | Android Engineer | Fintech Specialist",
+  baseUrl: "https://www.rahulmalkani.in",
+  title: "Rahul Malkani — Senior Mobile App Developer",
   name: "Rahul Malkani",
   ogImage: "/banner.jpg",
-  description: "Android engineer with 6+ years of experience building reliable fintech applications in payments and trading, with a strong focus on correctness, performance, and clean architecture.",
+  description: "Mobile applicattion engineer with experience building and maintaining production applications, focused on reliability and long-term maintainability.",
   metaTags: {
-    keywords:"Android Developer, Kotlin, Java, Jetpack Compose, Fintech, Payments, Trading, MVVM, Clean Architecture, Android SDK, Mobile App Development",
+    keywords: "Senior Mobile App Developer, Mobile Software Engineer, Android Developer, Android Engineer, Jetpack Compose, Kotlin Multiplatform, Compose Multiplatform, Production Mobile Applications, Reliable Mobile Systems",
     author: "Rahul Malkani",
     robots: "index, follow", // SEO instructions for search engines
   },
